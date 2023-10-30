@@ -1,0 +1,35 @@
+@media (max-width: 900px) {
+    main{
+        flex-direction: column;
+    }
+
+    .left-side{
+        width: 100%;
+    }
+
+    .form__set-cal__field{
+        width: 100%;
+    }
+
+    .div-search{
+        width: 100%;
+    }
+
+    .form__add-item__field{
+        width: 100%;
+    }
+
+    .form__set-cal{
+        flex-direction: column;
+    }
+
+    .form__add-item{
+        flex-direction: column;
+    }
+
+    .right-side{
+        margin-left: 10%;
+        width: 100%;
+    }
+}
+

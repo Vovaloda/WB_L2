@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор мемов</title>
+    <link rel="stylesheet" href="./assets/styles/drop.css">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/index1000.css">
+</head>
+<body>
+
+  <header>
+    <div class="div__form-upload">
+      <span class="white-text">генератор </span><span class="orange-text">мемов</span>
+    </div>
+  </header>
+
+  <main>
+
+    <form class="upload">
+      <p>Перетащите сюда файл или просто нажмите сюда.</p>
+      <input type="file" class="fileInput" accept="image/*">
+    </form>
+
+    <div class="generator__container">
+      <div class="setting__container">
+        <div class="header__setting">
+          <input placeholder="Текст для мема" type="text" class="meme-text-input">
+          <button class="add-text">добавить текст</button>
+          <button class="save-picture">сохранить картинку</button>
+        </div>
+        <div class="body__setting">
+          <h2 class="body__setting-title">
+            Настройка текста
+          </h2>
+          <div class="body__setting-body">
+            <div class="text-colors">
+              <p>красный</p>
+              <p>зелёный</p>
+              <p>синий</p>
+            </div>
+            <div class="range-colors">
+              <input type="range" name="gerColor" value="21" min="0" max="255" id="r">
+              <input type="range" name="gerColor" value="21" min="0" max="255" id="g">
+              <input type="range" name="gerColor" value="21" min="0" max="255" id="b">
+            </div>
+          </div>
+          </div>
+      </div>
+      <div class="img__container">
+        <img class="image-meme" src="" alt="Проверьте подключение к Интернету и обновите страницу, img" crossorigin="anonymous">
+      </div>
+    </div>
+  </main>
+
+  <canvas id="canvas"></canvas>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/saveImg.js"></script>
+  <script src="./js/colorTextChange.js"></script>
+  <script src="./js/loadImage.js"></script>
+</body>
+</html>

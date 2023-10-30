@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Визуализация алогритмов сортировки</title>
+    <link rel="stylesheet" href="./assets/styles/drop.css">
+    <link rel="stylesheet" href="./assets/styles/idnex.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+<body>
+    <main>
+        <div class="personal-array__field">
+            <p>Введите массив в формате '1, 2, 3, 4, 5'</p>
+            <p>Все элементы массива должны быть больше 0</p>
+            <p>Количество элементов должно быть больше 1 и меньше 101</p>
+            <p>Каждое число должно быть целочисленным</p>
+            <textarea placeholder="1, 2, 3, 4, 5" name="arr" id="arr-text-area"></textarea>
+        </div>
+
+        <section class="radio-section">
+            <div class="radio-list">
+                <h1>Выберите метод сортировки</h1>
+                <div class="radio-item"><input name="radio" id="radio1" type="radio" value="bubble" checked><label for="radio1">Пузырьком</label></div>
+                <div class="radio-item"><input name="radio" id="radio2" type="radio" value="insert"><label for="radio2">Вставками</label></div>
+                <div class="radio-item"><input name="radio" id="radio3" type="radio" value="quick"><label for="radio3">Быстрая</label></div>
+                <div class="radio-item"><input name="radio" id="radio4" type="radio" value="cycle"><label for="radio4">Циклическая</label></div>
+                <div class="radio-item"><input name="radio" id="radio5" type="radio" value="selected"><label for="radio5">Выбором</label></div>
+            </div>
+        </section>
+
+        <div class="chart__container">
+            <div class="chart"></div>
+
+            <div class="chart__buttons">
+                <button class='stop'>Пауза</button>
+                <button class="continue" disabled>Продолжить</button>
+            </div>
+        </div>
+
+        <div class="main__buttons">
+            <button class="back" disabled>Назад</button>
+            <button class="next">Вперёд</button>
+        </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/bubbleSort.js"></script>
+    <script src="./js/chartGenerate.js"></script>
+    <script src="./js/cycleSort.js"></script>
+    <script src="./js/insertionSort.js"></script>
+    <script src="./js/quickSort.js"></script>
+    <script src="./js/selectedSort.js"></script>
+    
+</body>
+</html>

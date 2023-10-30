@@ -1,0 +1,8 @@
+@media (max-width: 900px) {
+    .generator__container{
+        flex-direction: column;
+        margin-bottom: 25px;
+        margin-left: 40%;
+    }
+}
+

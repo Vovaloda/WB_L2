@@ -1,0 +1,118 @@
+#chart{
+    width: 200px;
+    height: 200px;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 10%;
+    margin-top: 15px;
+}
+
+.alert{
+    display: none;
+    color: red;
+}
+
+.form__add-item__field{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f8f8f8;
+}
+
+.form__add-item{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.button-delete__field{
+    display: flex;
+    align-items: flex-start;
+}
+
+.div-search{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f8f8f8;
+}
+
+
+.form__set-cal__field{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f8f8f8;
+}
+
+.form__set-cal{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.right-side{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sticky__right-side{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: sticky;
+    top: 15px;
+}
+
+.div__monitor-cal{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f8f8f8;
+}
+
+.monitor__header{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.monitor__body{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+
+.cal__diagram{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}

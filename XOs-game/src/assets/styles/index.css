@@ -1,0 +1,86 @@
+.game-type__conteiner{
+    margin-top: 3%;
+}
+
+.game-type__conteiner h2{
+    text-align: center;
+}
+
+.game-type{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.game-type button, .restart{
+    color: rgba(255, 255, 255, 0.8);
+    background: purple;
+    padding: 0 auto;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    width: 100px;
+    height: 60px;
+}
+
+.game-type button:hover, .restart:hover{
+    box-shadow: 0 10px 15px rgba(145, 92, 182, 0.8);
+    color: white;
+}
+
+.game-type .choosen-button{
+    background: plum;
+}
+
+.game__conteinter{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.game__text{
+    text-align: center;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 5px;
+    justify-content: center;
+}
+
+.ceil{
+    background: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: x-large;
+}
+
+.active:hover{
+    background: lightgray;
+}
+
+.redX{
+    cursor: default;
+    color: red;
+    background: lightgray;
+}
+
+.blueO{
+    cursor: default;
+    color: blue;
+    background: lightgray;
+}
+
+.yellowgreen{
+    background: yellowgreen;
+}
+
+.restart{
+    margin: 0 auto;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing-game</title>
+    <link rel="stylesheet" href="./assets/styles/drop.css">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/index500.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__icons">
+            <div class="div__info-icon">
+                <span class="info-icon"></span>
+                <div class="popup">
+                    <div>Я загадал целочисленное число, а ты попробуй его угадать.</div>
+                    <div>Число находится в пределах от <h5 class="min-number">0</h5> до <h5 class="max-number">100</h5> (включительно).</div>
+                    <div>Пределы угадываемых чисел ты можешь изменить в настройках.</div>
+                </div>
+            </div>
+            <span class="setting-icon"></span>
+            <span class="restart-icon"></span>
+        </div>
+    </header>
+
+    <main>
+        <div class="main__content">
+            <div class="main__text">
+                <h1 class="main__text__h1">ПОПРОБУЙТЕ УГАДАТЬ ЧИСЛО, КОТОРОЕ Я ЗАГАДАЛ</h1>
+            </div>
+            <div class="input-form__field">
+                <div class="input-form">
+                    <form class="input__form">
+                        <input type="number" name="guessing-input" id="guessing-input" placeholder="Введите предполагаемое число">
+                        <span type="submit" class="send-button"><button type="submit">ОТПРАВИТЬ</button></span>
+                    </form>
+                </div>
+                <div class="info-block">
+                    <div class="moves-counter">попыток сделано: <span>0</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal">
+        <div class="modal__content">
+            <h3>Настройки</h3>
+            <hr>
+            <div class="modal__form">
+                <form class="settings">
+                    <div class="min-number__fild">Введите минимальное число: <input type="number" name="min-numer__input" id="min-numer__input"></div>
+                    <div class="min-number__fild">Введите максимальное число: <input type="number" name="max-numer__input" id="max-numer__input"></div>
+                    <span class="save-button"><button type="submit">СОХРАНИТЬ</button></span>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/modalFormSubmit.js"></script>
+    <script src="./js/gameLogic.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учёт калорий</title>
+    <link rel="stylesheet" href="./assets/styles/drop.css">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/index1000.css">
+</head>
+<body>
+    
+    <main>
+        <div class="left-side">
+            <div class="form__set-cal__field">
+                <h3>Установка целевых показателей</h3>
+                <form class="form__set-cal">
+                    <input type="number" class="input__daily-cal" placeholder="Калорийность">
+                    <button class="button-set">сохранить</button>
+                </form>
+            </div>
+
+            <p class="alert">ВНИМАНИЕ! Превышен целевой показатель калорийности за день</p>
+
+            <div class="form__add-item__field">
+                <h3>Добавить продукт</h3>
+                <form class="form__add-item">
+                    <input type="text" class="input__item-name" placeholder="Название">
+                    <input type="number" class="input__item-cal" placeholder="Калорийность">
+                    <button class="button-add">добавить</button>
+                </form>
+            </div>
+
+            <div class="div-search">
+                <h3>Найти продукты</h3>
+                <input type="text" class="input__search" placeholder="Название">
+            </div>
+
+            <div class="button-delete__field">
+                <button class="button-delete">Удалить все данные</button>
+            </div>
+
+            <div class="table__cal">
+                <table>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="sticky__right-side">
+                <div class="div__monitor-cal">
+                    <div class="monitor__header">
+                        <h3>Калорий потреблено</h3>
+                    </div>
+                    <hr>
+                    <div class="monitor__body">
+                        <p class="monitor__body__text"><span class="personal__cal">0</span>/<span class="day-cal-limit">1500</span></p>
+                    </div>
+                </div>
+                <div class="cal__diagram">
+                    <canvas id="chart"></canvas>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/tableLogic.js"></script>
+    <script src="./js/onEditCal.js"></script>
+    <script src="./js/diagramDraw.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/localStorage.js"></script>
+</body>
+</html>

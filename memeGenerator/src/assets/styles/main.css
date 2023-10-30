@@ -1,0 +1,27 @@
+header{
+    text-align: center;
+    margin-top: 10px;
+}
+
+body{
+    background: rgba(0,0,0,0.9);
+    height: 90vh;
+}
+
+main{
+    height: 80vh;
+}
+
+button{
+    width: 140px;
+    height: 40px;
+    border: 1px solid orange;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    color: white;
+    transition: all 1s;
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
